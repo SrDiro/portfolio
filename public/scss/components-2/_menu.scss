@@ -1,0 +1,34 @@
+.menu__avatar-image{
+  width: 64px;
+  height: 64px;
+  background-image: url("../resources/man.png");
+  background-size: cover;
+}
+
+.menu__item{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: $Raleway;
+  font-size: 18px;
+}
+
+.menu__link-quien-soy{}
+
+.menu__link-proyectos{}
+
+.menu__link-contacto{}
+
+/* mobile-portrait | mobile-landscape | small-tablet-portrait | small-tablet-landscape */
+@media screen and (max-width: 799px){
+  .menu{
+    grid-template-columns: 1fr;
+    grid-template-rows: 74px 36px 36px 36px;
+  }
+  .menu__home--image{
+    margin: auto;
+  }
+  .menu__item{
+    justify-content: center;
+  }
+}
