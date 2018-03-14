@@ -1,0 +1,38 @@
+.guion{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.guion--delantero{
+  transform-origin: left center;
+  animation: 1s ease-out 0s 1 slideInWelcome;
+}
+
+.guion--trasero{
+  transform-origin: center right;
+  animation: 1s ease-out 0s 1 slideInWelcome;
+}
+
+.guion__linea {
+  content: "";
+  background: white;
+  width: 250px;
+  height: 1px;
+  margin: 0;
+}
+
+@media screen and (max-width: 799px){
+  .guion__linea{
+    width: 0px;
+  }
+}
+
+@keyframes slideInWelcome {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

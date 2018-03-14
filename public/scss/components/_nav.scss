@@ -1,40 +1,15 @@
 @import "../base/_typography.scss";
 
-.nav__title{
-  width: 100%;
-  color: #fff;
-  text-align: center;
-
-  h1{
-    font-family: $Lobster;
-    font-size: 12vmin;
-    margin: 0 10px;
+.guion{
+  display: flex;
+  align-items: center;
+  &:first-child{
+    justify-content: flex-end;
   }
+  overflow: hidden;
+}
 
-  h2{
-    font-family: $Raleway;
-    font-size: 2.8vmin;
-  }
-  .prueba{
-    display: grid;
-    max-width: 75%;
-    grid-template-columns: auto 50% auto;
-    margin-top: 10%;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .guion{
-    display: flex;
-    align-items: center;
-    &:first-child{
-      justify-content: flex-end;
-    }
-    overflow: hidden;
-  }
-
-  p {
+p {
   content: "";
   background: white;
   width: 250px;
@@ -43,32 +18,4 @@
   // transform: scaleX(0);
   // transform-origin: right center;
   // transition: transform 0.3s ease;
-}
-
-  @media screen and (max-width: 645px){
-      h1{
-        // font-size: 4.875em; // 78px
-        font-size: 12vmin;
-      }
-  }
-  @media screen and (max-width: 500px){
-        h1{
-          font-size: 3.675em; // 78px
-        }
-    }
-
-  @media screen and (max-width: 772px){
-    h2{
-      font-size: 1.236em; // 19,77px
-    }
-  }
-
-  // @media screen and (min-width: 1120px){
-  //   h1{
-  //     font-size: 8.875em; // 142px
-  //   }
-  //   h2{
-  //     font-size: 2.250em; // 36px
-  //   }
-  // }
 }
