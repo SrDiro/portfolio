@@ -1,22 +1,62 @@
 @import "../base/typography.scss";
 
-section{
-  margin: 0 auto;
+.sectio__titulo{
   width: 100%;
-  height: 100vh;
+  font-family: $Lobster;
+  font-size: 4.500em; // 72px
+  text-align: center;
+  padding-top: 4.5%;
+  margin: 0 auto;
+}
 
-  h1{
-    width: 100%;
-    font-family: $Lobster;
-    font-size: 4.500em; // 72px
-    text-align: center;
-    padding-top: 4.5%;
-    margin: 0 auto;
+/* ¿Quién soy? */
+
+.presentacion-container{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-auto-rows: auto;
+  width: 75%;
+  margin: 3.5% auto;
+}
+
+.presentacion__text{
+  text-align: justify;
+}
+
+.presentacion__imagen{
+  width: 300px;
+  height: 300px;
+  margin: 20% auto;
+  background-image: url("../resources/foto-perfil.png");
+  background-size: cover;
+  border: solid 1px;
+  border-radius: 50%;
+}
+
+.presentacion__descripccion{
+  font-family: $Raleway;
+  font-size: 1.125em; // 18px
+  margin: 0 auto 20px;
+}
+
+/* Proyectos */
+
+.section__proyectos-background{
+  width: inherit;
+  height: inherit;
+  background-image: url("../resources/imagen-proyectos.jpg");
+}
+
+/* mobile-portrait | mobile-landscape | small-tablet-portrait | small-tablet-landscape */
+@media screen and (max-width: 799px){
+  .presentacion-container{
+    grid-template-columns: 1fr;
   }
+}
 
-  p{
-    font-family: $Raleway;
-    font-size: 1.125em; // 18px
-    margin: 0 auto 20px;
+@media screen and (max-width: 450px){
+  .presentacion__imagen{
+    width: 200px;
+    height: 200px;
   }
 }

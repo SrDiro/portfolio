@@ -25,6 +25,12 @@
   grid-auto-rows: 64px;
 }
 
+.section-container{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
 /* mobile-portrait | mobile-landscape | small-tablet-portrait | small-tablet-landscape */
 @media screen and (max-width: 799px){
   .header__menu{
