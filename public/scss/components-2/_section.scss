@@ -1,6 +1,6 @@
 @import "../base/typography.scss";
 
-.sectio__titulo{
+.section__titulo{
   width: 100%;
   font-family: $Lobster;
   font-size: 4.500em; // 72px
@@ -45,6 +45,69 @@
   width: inherit;
   height: inherit;
   background-image: url("../resources/imagen-proyectos.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+  position: absolute;
+}
+
+.section__titulo:nth-child(2){
+  color: white;
+}
+
+.proyectos-container{
+  width: 50%;
+  height: 75vh;
+  margin: 25px auto 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+  "comerce proximos"
+  "cename proximos";
+}
+
+.proyecto__just-comerce{
+  grid-area: comerce;
+  width: 300px;
+  height: 300px;
+  background-image: url("../resources/just-comerce.jpg");
+  background-size: cover;
+  background-position: center;
+  border: solid 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.proyecto__cename{
+  grid-area: cename;
+  width: 300px;
+  height: 300px;
+  background-image: url("../resources/logo-cename.jpg");
+  background-size: cover;
+  border: solid 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.proyecto__proximos{
+  grid-area: proximos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border: solid 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+
+  p{
+    width: 150px;
+    font-size: 28px;
+    font-family: $Raleway;
+    text-align: center;
+  }
 }
 
 /* mobile-portrait | mobile-landscape | small-tablet-portrait | small-tablet-landscape */
