@@ -12,9 +12,9 @@
       </nav>
       <ul class="header__menu">
         <div class="menu__avatar-image"><a href="#"></a></div>
-        <li class="menu__item"><a class="menu__link-quien-soy link" href="#">¿Quién soy?</a></li>
-        <li class="menu__item"><a class="menu__link-proyectos link" href="#">Proyectos</a></li>
-        <li class="menu__item"><a class="menu__link-contacto link" href="#">Contacto</a></li>
+        <li class="menu__item"><a id="redirect-quienSoy" class="menu__link-quien-soy link" href="#" onclick="animatedScroll()">¿Quién soy?</a></li>
+        <li class="menu__item"><a id="redirect-proyectos" class="menu__link-proyectos link" href="#" onclick="animatedScroll()">Proyectos</a></li>
+        <li class="menu__item"><a id="redirect-contacto" class="menu__link-contacto link" href="#" onclick="animatedScroll()">Contacto</a></li>
       </ul>
       <nav class="welcome-container">
         <div class="welcome">
@@ -34,7 +34,7 @@
     </header>
 
     <main>
-      <section class="section-container">
+      <section id="quienSoy" class="section-container">
         <h1 class="section__titulo">¿Quién soy?</h1>
         <div class="presentacion-container">
           <div class="presentacion__text">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </section>
-      <section class="section-container">
+      <section id="proyectos" class="section-container">
         <div class="section__proyectos-background">
         </div>
         <h1 class="section__titulo">Proyectos</h1>
@@ -66,7 +66,7 @@
           </div>
         </div>
       </section>
-    <section class="section-container">
+    <section id="contacto" class="section-container">
         <h1 class="contacto__titulo">Contacto</h1>
         <input type="text" name="correo" placeholder="correo">
         <input type="text" name="nombre" placeholder="nombre">
@@ -101,6 +101,7 @@
       <p>Todos los derechos reservados ©</p>
       <p>Powered by srDiro</p>
     </footer> -->
+    <script src="./js/animated-scroll.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
